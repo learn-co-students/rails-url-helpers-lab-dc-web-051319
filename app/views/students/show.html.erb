@@ -1,1 +1,4 @@
+<%= link_to "<< Back to Students", students_path %>
 <h1><%= @student.to_s %></h1>
+<p>This student is currently <%= @student.status %>.</p>
+<!-- <p><%= link_to "Toggle Activation", "/activate" %></p> -->
