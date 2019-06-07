@@ -10,6 +10,7 @@ class Student < ActiveRecord::Base
       return "This student is currently inactive." 
       end 
   end
+  
   def toggle_status
     if self.active
       self.active = false

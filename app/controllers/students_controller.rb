@@ -12,11 +12,7 @@ class StudentsController < ApplicationController
 
   def activate
     set_student
-      if @student.active
-        @student.update(active: false)
-      else
-        @student.update(active: true)
-      end
+    @student.toggle_status
     redirect_to student_path(@student)
   end
 
